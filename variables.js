@@ -51,6 +51,18 @@ console.log(x);
 x-=10 //15
 console.log(x);
 
+x*=2//30
+console.log(x);
+
+x/=2//15
+console.log(x);
+
+x++; //16
+console.log(x);
+
+x-- //15
+console.log(x);
+
 //Multiple variables interactions
 var y,z;
 y=2
