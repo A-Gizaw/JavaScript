@@ -8,9 +8,10 @@
   <body>
 
     <p id="myId"></p>
+    <p id="info"></p>
 
     <script type="text/javascript">
-      //output to the console log on pahe
+      //output to the console log on page
       console.log("Output to the log");
 
       //Pop up window appears as soon as the page is loaded
@@ -20,11 +21,17 @@
       document.write('write straight to the file');
 
       //innerHtml -> Element reference must be before script, unless calling after load
-      document.getElementById("myId").innerHTML = "By Id";
+      document.getElementById("myId").innerHTML = "By Id"
 
+      //Another way to concatenate -> Text must be within backticks (`MyText`)
+      //                           -> variable must be passed throught ${variable name} syntax
+      var myName ="Adam"
+      var myCity ="London"
+
+      document.getElementById("info").innerHTML = `My name is ${myName}. My favorite city is ${myCity}.`
     </script>
 
-    <p id="myId"></p>
-    
+
+
   </body>
 </html>
