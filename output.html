@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Outputs</title>
+  </head>
+  <body>
+
+    <p id="myId"></p>
+
+    <script type="text/javascript">
+      //output to the console log on pahe
+      console.log("Output to the log");
+
+      //Pop up window appears as soon as the page is loaded
+      window.alert('POP-UP window');
+
+      //If called after page is loaded, it will delete all existing HTML
+      document.write('write straight to the file');
+
+      //innerHtml -> Element reference must be before script, unless calling after load
+      document.getElementById("myId").innerHTML = "By Id";
+
+    </script>
+
+    <p id="myId"></p>
+    
+  </body>
+</html>
