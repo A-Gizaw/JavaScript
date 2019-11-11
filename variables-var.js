@@ -1,4 +1,38 @@
 /*
+3 Types of variables are avaliabe in JavaScript
+  var
+  let
+  const
+*/
+
+/****    let     ****/
+
+/*
+let variables have a block scope (local variable)
+  These variable can ONLY be used after Declaration
+*/
+
+//Uncomment line 16 to get error
+//console.log(l);
+let l = 5
+console.log(l);
+
+/****    const     ****/
+
+/*
+const varibale can not be modified once instansiated (constant)
+  These variable can ONLY be used after Declaration
+*/
+
+//uncomment line 29 to get error
+const c = 9
+//c=10
+console.log(c);
+
+
+/****    var     ****/
+
+/*
 Var uses for integer
 */
 
