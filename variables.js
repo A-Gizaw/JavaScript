@@ -104,3 +104,11 @@ console.log(s.length);
 //New line
 s = "I am line 1\nI am line 2"
 console.log(s)
+
+/****    Varibale types     ****/
+
+var myVar ="I am a string"
+console.log(typeof myVar);//string
+
+myVar = 4
+console.log(typeof myVar);//Number
