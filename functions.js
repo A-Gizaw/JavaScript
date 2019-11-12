@@ -67,7 +67,35 @@ var dreams = function(name){
   return dream
 }
 
-console.log(dreams());
-console.log(dreams('luffy'));
-console.log(dreams('zoro'));
-console.log(dreams('sanji'));
+console.log(dreams());//prints "Find the one piece"
+console.log(dreams('luffy'));//prints "I'M GOING TO BE THE KING OF THE PIRATES!!!"
+console.log(dreams('zoro'));//prints "I'm going to be the worlds greates swordsman"
+console.log(dreams('sanji'));//prints "I'm going to find the all blue"
+
+
+/*
+Alternatively to writing fucntion everytime, you coudld use the arrow function syntax (lambdas -> java)
+By using this syntax you can use either a single-line block or multi-libe block
+  By using the single-line block, what ever is excexuted is automatically returned
+*/
+
+let ship = () => 'Sunny Go';
+
+console.log(ship());//prints 'Sunny Go'
+
+ship = crew => crew === 'Straw Hats' ? 'Sunny Go':'Heart Submarine';
+
+
+console.log(ship('Heart pirates'));//prints 'Heart Submarine'
+
+
+ship = (crew,captain) => {
+  if(crew === 'Straw Hats') {
+    console.log(`Sunny Go, CAPTAIN: ${captain}`)
+  }else{
+    console.log(`Heart Submarine, CAPTAIN: Law`);
+  }
+}
+
+ship('Straw Hats');//prints 'Sunny Go, CAPTAIN undefined' -> the previous funtion has been overwritten
+ship('Straw Hats','luffy');//prints 'Sunny Go, CAPTAIN luffy'
