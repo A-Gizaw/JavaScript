@@ -48,6 +48,8 @@ console.log(defaultName);
 
 /*
 Ternary operations are a short hand way of writing if statements
+Syntax:
+    CONDITION ? TRUE BLOCK : FALSE BLOCK ;
 */
 
 let truthy = "I will be truthy"
