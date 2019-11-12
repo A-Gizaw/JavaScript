@@ -29,3 +29,16 @@ if (favoritePhrase) {
 } else {
   console.log('This string is definitely empty.');
 }
+
+/*** Short-circuit evauation ***/
+
+var username
+
+let defaultName = username || "Stranger"
+
+console.log(defaultName);
+
+username = "Mr Logiks"
+defaultName = username || "Stranger"
+
+console.log(defaultName);
